@@ -38,9 +38,14 @@ failed to initialize sdl no available video device
 
 ## 通过VNC实现Windows远程连接
 
+**服务器端配置**
+
  1. 下载TigerVNC Server软件包
-见本项目中的文件：
->tigervncserver_1.6.80-4_amd64.deb
+
+> 小编已经帮大家下载好啦，见本项目中的文件：
+
+> tigervncserver_1.6.80-4_amd64.deb
+
  2. 安装TigerVNC Server软件包
 
 
@@ -49,11 +54,54 @@ cd ~
 mkdir tigervncserver
 cd tigervncserver
 sudo dpkg -i tigervncserver_1.6.80-4_amd64.deb
+或者
+sudo apt-get install tightvncserver
 ```
+
+此时很有可能会安装出错，如下所示，说明软件安装前的依赖信息没有安装
+
+```markdown
+(Reading database ... 435232 files and directories currently installed.)
+Preparing to unpack tigervncserver_1.6.80-4_amd64.deb ...
+Unpacking tigervncserver (1.6.80-4) over (1.6.80-4) ...
+dpkg: dependency problems prevent configuration of tigervncserver:
+ tigervncserver **depends** on libtasn1-3-bin; however:
+  Package libtasn1-3-bin is not installed.
+```
+
+运行以下命令安装依赖，更新完依赖之后继续上述安装命令
+> sudo apt-get -f install
+
+ 3. 配置xrdp设置
+
+> echo unity>~/.xsession
+ 
+ 4. 打开ubuntu的桌面共享功能
+
+ 进入系统-》首选项-》桌面共享，或者直接搜索桌面共享，如图所示
+
+**客户端配置**
+
+1. 开始菜单里搜索远程桌面功能，如下图所示
+
+![远程桌面](./images/5start.png)
+
+2. 在服务器端查看ip地址,输入命令
+
+> ifconfig
+
+3. 随后输入用户名和密码
+
+![用户名密码](./images/6login.png)
+
+4. 随后输入用户名和密码
+
+至此，xrdp连接Ubuntu 16.04的所有步骤已完成，如图所示是不是很**熟悉**
+![成功](./images/7success.png)
+
 
 ## 如若本文图片未显示
 
 请点击链接[解决GitHub中图片不显示](https://github.com/Jmt1995/PictureError)
 
 
-git remote add origin git@github.com:Jmt1995/win10-ubuntu-.git
