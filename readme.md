@@ -82,6 +82,11 @@ dpkg: dependency problems prevent configuration of tigervncserver:
 
  进入系统->首选项->桌面共享，或者直接搜索桌面共享，如图所示
 
+ 5. 重启
+
+ > sudo service xrdp restart
+
+
 **客户端配置**
 
 1. 开始菜单里搜索远程桌面功能，如下图所示
@@ -97,12 +102,25 @@ dpkg: dependency problems prevent configuration of tigervncserver:
 
 ![用户名密码](./images/6login.png)
 
-4. 随后输入用户名和密码
 
 至此，xrdp连接Ubuntu 16.04的所有步骤已完成，如图所示是不是很**熟悉**
 ![成功](./images/7success.png)
 
+4. 连接错误Error Connecting
 
+![错误](./images/8errorconn.png)
+
+> 解决：运行下面指令
+
+```markdown
+sudo apt-get remove xrdp vnc4server tightvncserver
+sudo apt-get install tightvncserver
+sudo apt-get install xrdp
+```
+
+来自[解决Error Connecting](https://askubuntu.com/questions/797973/error-problem-connecting-windows-10-rdp-into-xrdp)
+
+sudo service xrdp restart
 ## 如若本文图片未显示
 
 请点击链接[解决GitHub中图片不显示](https://github.com/Jmt1995/PictureError)
