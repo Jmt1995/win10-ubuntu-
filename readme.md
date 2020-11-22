@@ -116,11 +116,13 @@ dpkg: dependency problems prevent configuration of tigervncserver:
 sudo apt-get remove xrdp vnc4server tightvncserver
 sudo apt-get install tightvncserver
 sudo apt-get install xrdp
+
+sudo service xrdp restart
 ```
 
 来自[解决Error Connecting](https://askubuntu.com/questions/797973/error-problem-connecting-windows-10-rdp-into-xrdp)
 
-sudo service xrdp restart
+
 ## 如若本文图片未显示
 
 请点击链接[解决GitHub中图片不显示](https://github.com/Jmt1995/PictureError)
