@@ -41,12 +41,12 @@ failed to initialize sdl no available video device
 见本项目中的文件：
 >tigervncserver_1.6.80-4_amd64.deb
  2. 安装TigerVNC Server软件包
-"""markdown
-cd ~
-mkdir tigervncserver
-cd tigervncserver
-sudo dpkg -i tigervncserver_1.6.80-4_amd64.deb
-"""
+
+> cd ~
+> mkdir tigervncserver
+> cd tigervncserver
+> sudo dpkg -i tigervncserver_1.6.80-4_amd64.deb
+
 
 ## 如若本文图片未显示
 
