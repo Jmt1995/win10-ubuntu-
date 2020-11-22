@@ -13,7 +13,7 @@
 ## xrdp 与 vnc 区别
 ![区别](./images/1difference.png)
 
-## 通过XDRP实现Windows远程连接
+## 第三方实现Windows远程连接
 **不推荐这种方法**，该方法是通过第三方桌面系统实现远程访问，部分图形化软件的功能不能使用，可能会包报错误信息如下
 """markdown
 failed to initialize sdl no available video device
@@ -36,7 +36,7 @@ failed to initialize sdl no available video device
 
 下面讲解的是如何直接访问原生系统,小编比较推荐这种方法
 
-## 通过VNC实现Windows远程连接
+## 通过XDRP实现Windows远程连接
 
 **服务器端配置**
 
