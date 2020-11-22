@@ -15,9 +15,9 @@
 
 ## 第三方实现Windows远程连接
 **不推荐这种方法**，该方法是通过第三方桌面系统实现远程访问，部分图形化软件的功能不能使用，可能会包报错误信息如下
-"""markdown
+```markdown
 failed to initialize sdl no available video device
-"""
+```
 
 **服务器端配置**
 客户端配置很简单，我们会在下面介绍
@@ -124,5 +124,11 @@ sudo service xrdp restart
 ## 如若本文图片未显示
 
 请点击链接[解决GitHub中图片不显示](https://github.com/Jmt1995/PictureError)
+
+## 参考文献
+
+[Ubuntu原生桌面远程](https://blog.csdn.net/ZZMJ_F/article/details/78571773)
+[解决GitHub中图片不显示](https://github.com/Jmt1995/PictureError)
+[解决Error Connecting](https://askubuntu.com/questions/797973/error-problem-connecting-windows-10-rdp-into-xrdp)
 
 
