@@ -75,10 +75,12 @@ dpkg: dependency problems prevent configuration of tigervncserver:
  3. 配置xrdp设置
 
 > echo unity>~/.xsession
- 
- 4. 打开ubuntu的桌面共享功能
 
- 进入系统-》首选项-》桌面共享，或者直接搜索桌面共享，如图所示
+ 4. 打开ubuntu的桌面共享功能
+ ![桌面共享](./images/3deskshare.png)
+ ![共享配置](./images/4config.png)
+
+ 进入系统->首选项->桌面共享，或者直接搜索桌面共享，如图所示
 
 **客户端配置**
 
@@ -89,6 +91,7 @@ dpkg: dependency problems prevent configuration of tigervncserver:
 2. 在服务器端查看ip地址,输入命令
 
 > ifconfig
+![IP](./images/3ip.png)
 
 3. 随后输入用户名和密码
 
