@@ -31,6 +31,7 @@ failed to initialize sdl no available video device
 > echo “xfce4-session” >~/.xsession 
  5. #开启xrdp服务 
 > sudo service xrdp restart
+
 客户端连接之后，显示![界面](./images/2desktop.png)
 
 下面讲解的是如何直接访问原生系统,小编比较推荐这种方法
@@ -42,11 +43,13 @@ failed to initialize sdl no available video device
 >tigervncserver_1.6.80-4_amd64.deb
  2. 安装TigerVNC Server软件包
 
-> cd ~
-> mkdir tigervncserver
-> cd tigervncserver
-> sudo dpkg -i tigervncserver_1.6.80-4_amd64.deb
 
+```markdown
+cd ~
+mkdir tigervncserver
+cd tigervncserver
+sudo dpkg -i tigervncserver_1.6.80-4_amd64.deb
+```
 
 ## 如若本文图片未显示
 
